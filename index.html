@@ -59,162 +59,160 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Friendpurr</a>
-        </div>
+    <div id="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Friendpurr</a>
+          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Profile <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Feed</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Circles <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Cool cats</a></li>
-                <li><a href="#">Updogs</a></li>
-                <li><a href="#">Goats</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" style="top: 0px;" class="btn btn-default glyphicon glyphicon-search"></button>
-          </form>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Profile <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Feed</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Circles <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Cool cats</a></li>
+                  <li><a href="#">Updogs</a></li>
+                  <li><a href="#">Goats</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" style="top: 0px;" class="btn btn-default glyphicon glyphicon-search"></button>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </nav>
 
-    <div class="container-fluid" id="main">
-      <div class="row">
-        <div class="col-md-2 sidebar">
-          <div>
-            <img src="assets/img/200.jpeg" class="img-thumbnail" alt="profile picture">
-          </div>
-          <div>
-            <h1>Jane Paws</h1>
-            <button data-toggle="modal" data-target="#modal" class="btn btn-primary btn-large">Complete profile</button>
-          </div>
-        </div>
-        <div class="col-md-6 col-md-offset-1">
-          <div class="row">
-            <textarea placeholder="What are you meowing about?"></textarea>
+      <div class="container-fluid" id="main">
+        <div class="row">
+          <div class="col-md-2 sidebar">
             <div>
-              Share with...
-              <table>
-                <tr>
-                  <td><div class="friend1" role="checkbox" aria-checked="true"
-                           tabindex=0 aria-labelledby="label1"></div></td>
-                  <td><div class="friend2" role="checkbox"
-                           tabindex=0 aria-labelledby="label2"></div></td>
-                  <td><div class="friend3" role="checkbox"
-                           tabindex=0 aria-labelledby="label3"></div></td>
-                </tr>
-                <tr>
-                  <td><label id="label1">
-                    <span aria-hidden="true">Duchess</span></label></td>
-                  <td><label id="label2">
-                    <span aria-hidden="true">Berlioz</span></label></td>
-                  <td><label id="label3">
-                    <span aria-hidden="true">Marie</span></label></td>
-                </tr>
-              </table>
+              <img src="assets/img/200.jpeg" class="img-thumbnail" alt="profile picture">
+            </div>
+            <div>
+              <h1>Jane Paws</h1>
+              <button data-toggle="modal" data-target="#modal" class="btn btn-primary btn-large">Complete profile</button>
             </div>
           </div>
-          <div class="row">
-            <div class="thumbnail">
-              <img src="assets/img/640px-Baby_goats_jan_2007.jpg">
-              <div class="caption">
-                <span class="pull-right">
-                  <button class="btn btn-default">Share</button>
-                </span>
-                <p>
-                  "<a href="http://commons.wikimedia.org/wiki/File:Baby_goats_jan_2007.jpg#mediaviewer/File:Baby_goats_jan_2007.jpg">Baby goats jan 2007</a>" by <a href="//en.wikipedia.org/wiki/User:Fir0002" class="extiw" title="en:User:Fir0002">fir0002</a> | <a rel="nofollow" class="external text" href="http://www.flagstaffotos.com.au">flagstaffotos.com.au</a><br>Canon 20D + Canon 70-200mm f/2.8 L - <span class="int-own-work">Own work</span>.<br>Licensed under <a href="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html" title="GNU Free Documentation License 1.2">GFDL 1.2</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>."
-                </p>
+          <div class="col-md-6 col-md-offset-1">
+            <div class="row">
+              <textarea placeholder="What are you meowing about?"></textarea>
+              <div>
+                Share with...
+                <table>
+                  <tr>
+                    <td><div class="friend1" role="checkbox" aria-checked="true"
+                             tabindex=0 aria-labelledby="label1"></div></td>
+                    <td><div class="friend2" role="checkbox"
+                             tabindex=0 aria-labelledby="label2"></div></td>
+                    <td><div class="friend3" role="checkbox"
+                             tabindex=0 aria-labelledby="label3"></div></td>
+                  </tr>
+                  <tr>
+                    <td><label id="label1">
+                        <span aria-hidden="true">Duchess</span></label></td>
+                    <td><label id="label2">
+                        <span aria-hidden="true">Berlioz</span></label></td>
+                    <td><label id="label3">
+                        <span aria-hidden="true">Marie</span></label></td>
+                  </tr>
+                </table>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="thumbnail">
-              <blockquote>
-                <p>
-                  It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
-                </p>
-                <p>
-                  However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters.
-                </p>
-                <p>
-                  "My dear Mr. Bennet," said his lady to him one day, "have you heard that Netherfield Park is let at last?"
-                </p>
-                <p>
-                  Mr. Bennet replied that he had not.
-                </p>
-                <p>
-                  "But it is," returned she; "for Mrs. Long has just been here, and she told me all about it."
-                </p>
-                <p>
-                  Mr. Bennet made no answer.
-                </p>
-                <p>
-                  "Do you not want to know who has taken it?" cried his wife impatiently.
-                </p>
-                <p>
-                  "You want to tell me, and I have no objection to hearing it."
-                </p>
-                <p>
-                  This was invitation enough.
-                </p>
-              </blockquote>
-              <div class="caption">
-                -- Jane Austen, "Pride and Prejudice"
+            <div class="row">
+              <div class="thumbnail">
+                <img src="assets/img/640px-Baby_goats_jan_2007.jpg">
+                <div class="caption">
+                  <span class="pull-right">
+                    <button class="btn btn-default">Share</button>
+                  </span>
+                  <p>
+                    "<a href="http://commons.wikimedia.org/wiki/File:Baby_goats_jan_2007.jpg#mediaviewer/File:Baby_goats_jan_2007.jpg">Baby goats jan 2007</a>" by <a href="//en.wikipedia.org/wiki/User:Fir0002" class="extiw" title="en:User:Fir0002">fir0002</a> | <a rel="nofollow" class="external text" href="http://www.flagstaffotos.com.au">flagstaffotos.com.au</a><br>Canon 20D + Canon 70-200mm f/2.8 L - <span class="int-own-work">Own work</span>.<br>Licensed under <a href="http://www.gnu.org/licenses/old-licenses/fdl-1.2.html" title="GNU Free Documentation License 1.2">GFDL 1.2</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>."
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header" aria-hidden="true">
-              <button type="button" class="close" data-dismiss="modal">×</button>
-              <h3 id="myModalLabel">Complete your profile</h3>
-            </div>
-            <div class="modal-body">
-              <div id="progressLbl">
-                <h5 aria-hidden="true">Profile progress:</h5>
+            <div class="row">
+              <div class="thumbnail">
+                <blockquote>
+                  <p>
+                    It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+                  </p>
+                  <p>
+                    However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters.
+                  </p>
+                  <p>
+                    "My dear Mr. Bennet," said his lady to him one day, "have you heard that Netherfield Park is let at last?"
+                  </p>
+                  <p>
+                    Mr. Bennet replied that he had not.
+                  </p>
+                  <p>
+                    "But it is," returned she; "for Mrs. Long has just been here, and she told me all about it."
+                  </p>
+                  <p>
+                    Mr. Bennet made no answer.
+                  </p>
+                  <p>
+                    "Do you not want to know who has taken it?" cried his wife impatiently.
+                  </p>
+                  <p>
+                    "You want to tell me, and I have no objection to hearing it."
+                  </p>
+                  <p>
+                    This was invitation enough.
+                  </p>
+                </blockquote>
+                <div class="caption">
+                  -- Jane Austen, "Pride and Prejudice"
+                </div>
               </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="eighty" aria-valuemin="0" aria-valuemax="100" aria-labelledby="progressLbl" style="width: 80%;"></div>
-              </div>
-              <label>Bio:</label>
-              <textarea id="bio" style="width: 95%;" rows="2">
-6 month old kitten, loves butterflies, laser pointers and goats!
-              </textarea>
-            </div>
-            <div class="modal-footer">
-              <button class="btn" data-dismiss="modal">Close</button>
-              <button class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
       </div>
     </div> <!-- /container -->
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" aria-hidden="true">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h3 id="myModalLabel">Complete your profile</h3>
+          </div>
+          <div class="modal-body">
+            <div id="progressLbl">
+              <h5 aria-hidden="true">Profile progress:</h5>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="eighty" aria-valuemin="0" aria-valuemax="100" aria-labelledby="progressLbl" style="width: 80%;"></div>
+            </div>
+            <label>Bio:</label>
+            <textarea id="bio" style="width: 95%;" rows="2">
+              6 month old kitten, loves butterflies, laser pointers and goats!
+            </textarea>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
