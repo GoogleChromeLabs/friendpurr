@@ -31,6 +31,11 @@
       }
       #main {
           margin: 3em;
+          max-width: 800px;
+      }
+      img {
+          padding: 1em;
+          border: 1px solid #999;
       }
     </style>
   </head>
@@ -38,121 +43,286 @@
   <body>
     <div id="container">
       <div class="container-fluid" id="main">
-        <div class="row">
-          <div class="col-sm-6">
 
-            <img class="hashtag"
-                 src="io_hashtag_small.gif" alt="Hashtag Google I/O">
+        <img class="hashtag"
+             src="io_hashtag_small.gif" alt="Hashtag Google I/O">
 
-            <h2>Intro</h2>
+        <h2>Intro</h2>
 
-            <p>
-              Welcome to Friendpurr!  With FriendPurr, you can quickly
-              learn to identify some of the most common accessibility
-              errors.  Let’s get started!
-            </p>
+        <p>
+          It's hard to make your website accessible to everyone without
+          first understanding all of the different ways people use computers.
+        </p>
 
-            <p>
-              <a href="friendpurr.html" target="_blank" id="open_popup">
-                Click here to open Friendpurr in a new window
-              </a>
-            </p>
+        <p>
+          The
+          <a href="https://storage.googleapis.com/a11y-io/moving-buttons/html/index.html">
+            Demo in the Inspire section of the Accessibility sandbox
+          </a>
+          can give you a better sense of how much of a difference
+          making content accessible can be for users who really need
+          it.
+        </p>
 
-            <h2>Instructions</h2>
+        <p>
+          At Google, we encourage our web designers and web developers
+          to experience using a screen reader, so they understand what
+          it's like for a blind person to browse the web.
+        </p>
 
-            <ol>
-              <li>
-                Turn on the screen reader:
-                <ul>
-                  <li>
-                    On a Chromebook, turn on ChromeVox by pressing
-                    Ctrl + Alt + Z. Remember that you can press Ctrl
-                    to silence speech at any time.  If you haven’t
-                    used ChromeVox, consider running through our
-                    tutorial by pressing Search + O, then T.
-                  <li>
-                    On Mac, you can triple press the power button on
-                    the touch bar to turn on and use ctrl + option
-                    and the arrow keys to move and ctrl + option
-                    space to select.
-                  <li>
-                    NVDA on Windows: Download the free and open
-                    source screen reader here Enable: Ctrl + Alt + N
-                    Disable: Insert + Q
-                </ul>
-              <li>
-                Navigate through the page using the keyboard and
-                screen reader:
-                <ul>
-                  <li>ChromeVox on Chrome OS Use ChromeVox navigation
-                    (Search + Right arrow to go forwards, or Search +
-                    Left arrow to go backwards) to navigate through
-                    the page and explore its accessibility.
-                  <li>Voiceover on Mac
-                    <ul>
-                      <li>Press Ctrl + Option + Right to move forward
-                      item by item, Ctrl + Option + Left to move
-                      backwards
+        <p>
+          We built this fake site, FriendPurr, to illustrate some of
+          the ways that a website can be inaccessible, to give
+          developers some experience catching and fixing common
+          accessibility issues.
+        </p>
 
-                      <li>When you want to move to a different part of
-                          the browser (e.g. from the toolbar to the
-                          web content) you will be prompted to enter
-                          that section through pressing Ctrl + Option
-                          + Shift + Down, and likewise Ctrl + Option +
-                          Shift + Up to exit that area when done
+        <p>
+          Let’s get started!
+        </p>
 
-                      <li>Press Enter or Ctrl + Option + Space to
-                        activate an item
-                    </ul>
-                  <li>
-                    NVDA on Windows
-                    <ul>
-                      <li>Use the arrow keys to move item by item
-                      <li>Press Enter to activate
-                    </ul>
-                </ul>
-              <li>Take a look at the content with the screen reader:
-                <ul>
-                  <li>Use Tab to navigate through the top links.  What
-                    do you notice?
+        <p>
+          <a href="friendpurr.html" target="_blank" id="open_popup">
+            Click here to open Friendpurr in a new window
+          </a>
+        </p>
 
-                  <li>Turn on the screen reader and navigate to the
-                    images on the page.  Anything that needs to be updated?
+        <h2>
+          Instructions
+        </h2>
 
-                  <li>Can you navigate everywhere you need to? Is your
-                    focus position clear?
-                </ul>
-              <li>
-                Take a look at contrast ratios:
+        <p>
+          Make a note of issues you come across, or places where you
+          feel like the usability could be improved as you take a look
+          at keyboard focus, screen reader navigation, and contrast
+          ratios.
+        </p>
 
-                <ul>
-                  <li>In addition to using the screen reader, take a
-                    look at the contrast on the page.  Are the
-                    contrast ratios meeting at a minimum 4.5:1 for
-                    text to background?
+        <h3>
+          Keyboard Focus
+        </h3>
 
-                  <li>Use the Lighthouse DevTools audit to see which
-                    areas are not meeting the minimum.
-                </ul>
-              <li>
-                Make a note of issues you come across, or places where
-                you feel like the usability could be improved.
-            </ol>
+        <p>
+          Use the Tab key on your keyboard to try to navigate content
+          on the page. See if content is focusable, and if there is a
+          logical tab order.
+          </p>
 
-            <h2>Scenarios:</h2>
+        <p>
+          It should always be possible to use any web app using only
+          the keyboard. Some users can't easily use a mouse or other
+          pointing device, and others just find it more efficient a
+          lot of the time.
+        </p>
 
-            <ol>
-              <li>
-                Use tab to navigate through the top headings.  What do
-                you notice?
-              <li>Turn on the screen reader and navigate to the images on
-                the page.  Anything that needs to be updated?
-              <li>Read the content on the page.  Can you tell using a
-                screen reader what’s the image that’s relevant to the page?
-            </ol>
+        <h3>
+          Use Tools to Run an Accessibility Audit
+        </h3>
 
-          </div>
+        <p>
+          Run the
+          <a href="https://web.dev/lighthouse-accessibility/">
+            Lighthouse DevTools accessibility audits
+          </a>
+          and take a look at the results.  Keep in mind that the
+          audits don’t catch everything, so manually testing is
+          usually needed to ensure an accessible experience.
+        </p>
+
+        <h3>
+          Try using a screen reader
+        </h3>
+
+        <p>
+          Turn on the screen reader:
+        </p>
+
+        <ul>
+          <li>
+            On a Chromebook, Turn on and off ChromeVox by pressing
+            <b>Ctrl + Alt + Z</b>. Remember that you can press Ctrl to
+            silence speech at any time. If you haven’t used
+            ChromeVox, consider running through the tutorial by
+            pressing Search + O, then T.
+          </li>
+          <li>
+            On Mac, if you have a touch bar, you can triple-tap the power
+            button on the touch bar - otherwise press Cmd+F5.
+          </li>
+          <li>
+            NVDA on Windows:
+            <a href="https://www.nvaccess.org/download/">
+              Download the free and open source screen
+              reader here
+            </a>
+            <br>
+            Enable: Ctrl + Alt + N
+            <br>
+            Disable: Insert + Q
+          </li>
+          <li>
+            Narrator on Windows: Win+Ctrl+Enter
+          </li>
+        </ul>
+
+        <p>
+          Navigate through the page using the screen reader:
+        </p>
+
+        <ul>
+          <li>
+            ChromeVox on Chrome OS: Use Search + Right arrow to go
+            forwards, or Search + Left arrow to go backwards) to
+            navigate through the page and explore its accessibility.
+          <li>
+            Voiceover on Mac: Press Ctrl + Option + Right to move
+            forward item by item, Ctrl + Option + Left to move
+            backwards
+            <br>
+            Press Ctrl + Option + Shift + Down arrow/ Up
+            arrow to interact with (go into/out of) objects (like
+            iframes, menus, application regions, etc.)
+            <br>
+            Press Enter or
+            Ctrl + Option + Space to activate an item.
+          <li>
+            NVDA on Windows:
+            <a href="https://www.youtube.com/watch?v=Jao3s_CwdRU">
+              Check out this tutorial on NVDA for more information
+            </a>
+
+            Use the arrow keys to move item by item If you land in a
+            text field, press Escape to exit the text field Press
+            Enter to activate
+
+          <li>
+            Narrator on Windows: Use arrow keys to
+            move around the page, and press Enter to activate.
+
+        </ul>
+
+        <p>
+          Take a look at the content with the screen reader:
+        </p>
+        <ul>
+          <li>
+            Use Tab to navigate through the top links.  What do you notice?
+          <li>
+            Navigate to the images on the page.  Anything that needs
+            to be updated?
+          <li>
+            Can you navigate everywhere you need to? Is your focus
+            position clear?
+          <li>
+            Try to share with Marie.  What do you notice?
+        </ul>
+
+        <h2>Results</h2>
+
+        We encourage you to try the steps above for yourself. Once
+        you've done that, compare your notes to some of the issues we
+        found below.
+
+        <h3>Low Contrast Text</h3>
+
+        <div>
+          <img src="low_contrast_text.png"
+               alt="Top nav bar of the Friendpurr site, showing low contrast ratios of the text to background.">
         </div>
+
+        <p>
+          The text on the top nav bar can be hard to see for people
+          with low vision. The ratio here is 4.2 and the guidelines
+          are for text to be above a 4.5:1 ratio. The
+          <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/#contrast">
+            Chrome DevTools built-in checker
+          </a>
+          can help compute contrast ratios for you.
+        </p>
+
+        <h3>No Focus Highlights</h3>
+
+        <p>
+          When navigating by keyboard you can see a focus ring around
+          the different elements. The “Circles” Nav button does not
+          have this highlight. The text becomes bold, but that may be
+          less perceivable to many. We want to ensure clear focus
+          indication to avoid “focus roulette”.
+        </p>
+
+        <div>
+          <img src="no_focus_highlights.png"
+               alt="Top nav bar of the Friendpurr site, showing no focus rings around the Circles nav button when focused">
+        </div>
+
+        <h3>Unlabelled Button </h3>
+
+        <p>
+          The search button is unlabelled. When using a screen reader
+          the user only hears that it is a “default button” thus not
+          knowing what will happen if the button is selected.
+        </p>
+
+        <div>
+          <img src="unlabelled_button.png"
+               alt="Screenshot of the search button on the Friendpurr site">
+        </div>
+
+        <h3>Unlabelled Elements</h3>
+
+        <p>
+          The different friends that can be shared with are unlabelled
+          checkboxes. The screen reader just reads checkbox, checked
+          or unchecked leaving a screen reader user unable to know
+          what it is they are selecting.
+          <br>
+          You also can’t use the keyboard to check or uncheck the checkboxes!
+          <br>
+          And there are unnecessary linear stops on the cat names that
+          do not verbalize.
+        </p>
+
+        <div>
+          <img src="unlabelled_elements.png"
+               alt="Screenshot of the part of the Friendpurr site where you can share, where the controls are not labelled">
+        </div>
+
+        <h3>Unlabelled Images</h3>
+
+        <div>
+          <img src="unlabelled_images.png"
+               alt="Screenshot of an unlabelled image on the Friendpurr site">
+        </div>
+
+        <p>
+          The image has no alt-text. A screen reader is only told
+          there is an image without getting any context to what the
+          image is of.
+        </p>
+
+        <h3>Dialog Issues </h3>
+
+        <div>
+          <img src="dialog_issues.png"
+               alt="Screenshot of the Complete Your Profile dialog in Friendpurr">
+        </div>
+
+        <p>
+          When you press the Complete profile button, there are some
+          issues. The window title is verbalized, which is great. But
+          then you hear an uninformative update about progress. You
+          can’t reliably get to the close or save changes button using
+          the screen reader. Also, your focus can navigate outside of
+          the dialog, which shouldn’t be possible with a modal dialog!
+          Your focus should remain inside until you take action with a
+          button or press Esc to close.
+
+          Also, you can only get to the X close button through
+          pressing Tab, and not through Search + Right or Left. And,
+          the X button has a label of “times, button” instead of
+          “close, button”.
+        </p>
+
       </div>
     </div>
 
