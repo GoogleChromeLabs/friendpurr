@@ -26,9 +26,6 @@
           margin: 1em 0;
       }
 
-      img.hashtag {
-          margin-left: -5px;
-      }
       #main {
           margin: 3em;
           max-width: 800px;
@@ -36,6 +33,11 @@
       img {
           padding: 1em;
           border: 1px solid #999;
+      }
+      img.hashtag {
+          margin-left: -5px;
+          padding: 0;
+          border: 0;
       }
     </style>
   </head>
@@ -56,7 +58,8 @@
 
         <p>
           The
-          <a href="https://storage.googleapis.com/a11y-io/moving-buttons/html/index.html">
+          <a href="https://storage.googleapis.com/a11y-io/moving-buttons/html/index.html"
+             target="_blank">
             Demo in the Inspire section of the Accessibility sandbox
           </a>
           can give you a better sense of how much of a difference
@@ -121,7 +124,8 @@
 
         <p>
           Run the
-          <a href="https://web.dev/lighthouse-accessibility/">
+          <a href="https://web.dev/lighthouse-accessibility/"
+             target="_blank">
             Lighthouse DevTools accessibility audits
           </a>
           and take a look at the results.  Keep in mind that the
@@ -151,7 +155,8 @@
           </li>
           <li>
             NVDA on Windows:
-            <a href="https://www.nvaccess.org/download/">
+            <a href="https://www.nvaccess.org/download/"
+               target="_blank">
               Download the free and open source screen
               reader here
             </a>
@@ -187,10 +192,11 @@
             Ctrl + Option + Space to activate an item.
           <li>
             NVDA on Windows:
-            <a href="https://www.youtube.com/watch?v=Jao3s_CwdRU">
+            <a href="https://www.youtube.com/watch?v=Jao3s_CwdRU"
+               target="_blank">
               Check out this tutorial on NVDA for more information
-            </a>
-
+            </a>.
+            <br>
             Use the arrow keys to move item by item If you land in a
             text field, press Escape to exit the text field Press
             Enter to activate
@@ -219,9 +225,11 @@
 
         <h2>Results</h2>
 
-        We encourage you to try the steps above for yourself. Once
-        you've done that, compare your notes to some of the issues we
-        found below.
+        <p>
+          We encourage you to try the steps above for yourself. Once
+          you've done that, compare your notes to some of the issues we
+          found below.
+        </p>
 
         <h3>Low Contrast Text</h3>
 
@@ -234,7 +242,8 @@
           The text on the top nav bar can be hard to see for people
           with low vision. The ratio here is 4.2 and the guidelines
           are for text to be above a 4.5:1 ratio. The
-          <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/#contrast">
+          <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/#contrast"
+             target="_blank">
             Chrome DevTools built-in checker
           </a>
           can help compute contrast ratios for you.
